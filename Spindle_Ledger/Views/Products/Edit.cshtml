@@ -1,0 +1,167 @@
+﻿@model Spindle_Ledger.Models.Products
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Products</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Product_Name" class="control-label"></label>
+                <input asp-for="Product_Name" class="form-control" />
+                <span asp-validation-for="Product_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product_Description" class="control-label"></label>
+                <input asp-for="Product_Description" class="form-control" />
+                <span asp-validation-for="Product_Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product_Cost" class="control-label"></label>
+                <input asp-for="Product_Cost" class="form-control" />
+                <span asp-validation-for="Product_Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product_Quantity" class="control-label"></label>
+                <input asp-for="Product_Quantity" class="form-control" />
+                <span asp-validation-for="Product_Quantity" class="text-danger"></span>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <label asp-for="Seller_Name" class="control-label"></label>
+                <input asp-for="Seller_Name" class="form-control" />
+                <span asp-validation-for="Seller_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seller_Address" class="control-label"></label>
+                <input asp-for="Seller_Address" class="form-control" />
+                <span asp-validation-for="Seller_Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seller_Contact" class="control-label"></label>
+                <input asp-for="Seller_Contact" class="form-control" />
+                <span asp-validation-for="Seller_Contact" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="TransportFromSeller_Name" class="control-label"></label>
+                <input asp-for="TransportFromSeller_Name" class="form-control" />
+                <span asp-validation-for="TransportFromSeller_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportFromSeller_Description" class="control-label"></label>
+                <input asp-for="TransportFromSeller_Description" class="form-control" />
+                <span asp-validation-for="TransportFromSeller_Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportFromSeller_Cost" class="control-label"></label>
+                <input asp-for="TransportFromSeller_Cost" class="form-control" />
+                <span asp-validation-for="TransportFromSeller_Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportFromSeller_Contact" class="control-label"></label>
+                <input asp-for="TransportFromSeller_Contact" class="form-control" />
+                <span asp-validation-for="TransportFromSeller_Contact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportFromSeller_Date" class="control-label"></label>
+                <input asp-for="TransportFromSeller_Date" class="form-control" />
+                <span asp-validation-for="TransportFromSeller_Date" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="WareHouse_Name" class="control-label"></label>
+                <input asp-for="WareHouse_Name" class="form-control" />
+                <span asp-validation-for="WareHouse_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WareHouse_Address" class="control-label"></label>
+                <input asp-for="WareHouse_Address" class="form-control" />
+                <span asp-validation-for="WareHouse_Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WareHouse_Cost" class="control-label"></label>
+                <input asp-for="WareHouse_Cost" class="form-control" />
+                <span asp-validation-for="WareHouse_Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WareHouse_Contact" class="control-label"></label>
+                <input asp-for="WareHouse_Contact" class="form-control" />
+                <span asp-validation-for="WareHouse_Contact" class="text-danger"></span>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <label asp-for="TransportToCustomer_Name" class="control-label"></label>
+                <input asp-for="TransportToCustomer_Name" class="form-control" />
+                <span asp-validation-for="TransportToCustomer_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportToCustomer_Description" class="control-label"></label>
+                <input asp-for="TransportToCustomer_Description" class="form-control" />
+                <span asp-validation-for="TransportToCustomer_Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportToCustomer_Cost" class="control-label"></label>
+                <input asp-for="TransportToCustomer_Cost" class="form-control" />
+                <span asp-validation-for="TransportToCustomer_Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportToCustomer_Contact" class="control-label"></label>
+                <input asp-for="TransportToCustomer_Contact" class="form-control" />
+                <span asp-validation-for="TransportToCustomer_Contact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransportToCustomer_Date" class="control-label"></label>
+                <input asp-for="TransportToCustomer_Date" class="form-control" />
+                <span asp-validation-for="TransportToCustomer_Date" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Customer_Name" class="control-label"></label>
+                <input asp-for="Customer_Name" class="form-control" />
+                <span asp-validation-for="Customer_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer_Address" class="control-label"></label>
+                <input asp-for="Customer_Address" class="form-control" />
+                <span asp-validation-for="Customer_Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customer_Contact" class="control-label"></label>
+                <input asp-for="Customer_Contact" class="form-control" />
+                <span asp-validation-for="Customer_Contact" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

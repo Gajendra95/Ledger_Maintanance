@@ -1,0 +1,175 @@
+﻿@model Spindle_Ledger.Models.Products
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Products</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Product_Name)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Product_Name)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Product_Description)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Product_Description)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Product_Cost)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Product_Cost)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Product_Quantity)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Product_Quantity)
+        </dd>
+
+
+
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Seller_Name)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Seller_Name)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Seller_Address)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Seller_Address)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Seller_Contact)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Seller_Contact)
+        </dd>
+
+
+
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportFromSeller_Name)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportFromSeller_Name)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportFromSeller_Description)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportFromSeller_Description)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportFromSeller_Cost)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportFromSeller_Cost)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportFromSeller_Contact)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportFromSeller_Contact)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportFromSeller_Date)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportFromSeller_Date)
+        </dd>
+
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.WareHouse_Name)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.WareHouse_Name)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.WareHouse_Address)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.WareHouse_Address)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.WareHouse_Cost)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.WareHouse_Cost)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.WareHouse_Contact)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.WareHouse_Contact)
+        </dd>
+
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportToCustomer_Name)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportToCustomer_Name)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportToCustomer_Description)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportToCustomer_Description)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportToCustomer_Cost)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportToCustomer_Cost)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportToCustomer_Contact)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportToCustomer_Contact)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.TransportToCustomer_Date)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.TransportToCustomer_Date)
+        </dd>
+
+
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Customer_Name)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Customer_Name)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Customer_Address)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Customer_Address)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Customer_Contact)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Customer_Contact)
+        </dd>
+
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
